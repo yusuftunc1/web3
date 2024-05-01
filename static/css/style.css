@@ -1,0 +1,516 @@
+body {
+
+	background-color: #ffffff;
+	/* Yeni arka plan rengi #eedcdc;  */
+  }
+
+  #navcolor{
+	background-color: #2bff00;
+  }
+
+  #grad1 {
+	height: 150px;
+	background-color: red;
+	/* For browsers that do not support gradients */
+	background-image: linear-gradient(to right, #e3d6d6, #d4ffff, #e3d6d6);
+  }
+
+  #projectcss {
+
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+	padding-left: 170px;
+  }
+
+  #butonkonum {
+
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+	padding-left: 1200px;
+  }
+
+  span {
+
+  }
+
+  .border {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	float: right;
+
+	box-shadow: black;
+	display: inline-block;
+	width: 300px;
+	height: 500px;
+	margin: 6px;
+	background-color: #f3e4e4;
+  }
+
+  #hrcizgi {
+
+	margin-left: 170px;
+	margin-right: 700px;
+	border-style: solid;
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+  }
+
+  #hrhakkimizda{
+	border-style: solid;
+	color: rgb(66, 66, 66);
+	
+
+  }
+
+
+  #colorup {
+	
+	color: #ffffff;
+	font-size: 35px;
+	font-family: 'Castoro Titling' ;
+  }
+
+  #fontduyuru{
+   
+	font-family: 'Castoro Titling';
+	
+  }
+
+  #fontduyurubox{
+   
+	font-family: 'Castoro Titling';
+	color:white;
+  }
+
+#projetitle{
+	font-family: 'Castoro Titling';
+	font-size: 20px;
+}
+
+#projectdetail{
+
+	font-family: 'Castoro Titling';
+}
+  #tablehw{
+	width: 100px;
+	height: 200px;
+	
+  }
+  
+
+  #nav-text{
+	font-family: 'Castoro Titling';
+	font-size: 15px;
+	color:rgb(255, 255, 255);
+
+  }
+
+#hakdiv{
+color: #000a28;
+text-align: left; 
+font-family: 'Hina Mincho';
+margin-left: 470;
+margin-right: 520;
+font-size: 20px;
+}
+
+#projectbox{
+	color: #000a28;
+	text-align: left; 
+	font-family: 'Hina Mincho';
+	margin-left: 470;
+	margin-right: 520;
+	font-size: 50%;
+	}
+
+	.shadow-container {
+		margin-right: 70px;
+		display: inline-block; /* veya display: block; */
+	  }
+	
+	  .shadow-content {
+		background-color: rgb(211, 225, 255);
+		padding: 30px;
+		height: 550px;
+		filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1)); /* Ayarlamak istediğiniz gölge efektine göre değerleri değiştirin */
+	  }
+
+
+/* --------------------------- FOOTER-----------------------------------*/
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    }
+    
+    .footer{
+    background:#193073;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+
+	
+
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+	display: block;
+    }
+    /* ikon yazı rengi */
+    .footer .row a{
+    text-decoration:none;
+    color: white;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:rgb(207, 197, 197);
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+/*---------------------------CARD PROJECT-----------------------*/
+
+body {
+	background-color: #eee;
+}
+
+.title {
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+.card-block {
+	font-size: 1em;
+	position: relative;
+	margin: 0;
+	padding: 1em;
+	border: none;
+	border-top: 1px solid rgba(34, 36, 38, .1);
+	box-shadow: none;
+	width: 250px;
+	height: 220px;
+}
+
+.card {
+	font-size: 1em;
+	overflow: hidden;
+	padding: 5px; /* Eksik olan 'px' eklendi */
+	border: none;
+	border-radius: .28571429rem;
+	box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+	margin-top: 20px;
+}
+
+.carousel-indicators li {
+	border-radius: 12px;
+	width: 12px;
+	height: 12px;
+	background-color: #404040;
+}
+
+.carousel-indicators .active {
+	background-color: white;
+	max-width: 12px;
+	margin: 0 3px;
+	height: 12px;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* Eksik olan bir stil tanımı düzeltildi */
+.btn {
+	margin-top: auto;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+	content: none; /* Üçgeni gizler */
+  }
+
+  
+/*deneme*/
+ 
+ 
+ .navbar-nav .nav-item + .nav-item {
+    margin-left: 100px; /* İstenilen boşluğu ayarlayabilirsiniz */
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #ffffff;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #ff0e6a;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+	border-radius: 5px;
+	padding: 20px;
+  }
+
+/*NAVBAR*/
+
+/* Menüyü gizle */
+
+.navbar{
+	background-color: #1210c0;
+}
+
+.menu {
+	display: none;
+  }
+  
+  /* Menü butonunun stilini düzenle */
+  .menu-toggle {
+	cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+	.menu {
+	  display: none; /* Menüyü gizle */
+	}
+	
+	.menu-toggle {
+	  display: block; /* Menü butonunu göster */
+	}
+  }
+  
+
+/* Bu stil kuralları belirli bir ID'ye sahip butonun rengini değiştirir */
+#navbarNav .navbar-toggler {
+    background-color: #ff0000; /* Kırmızı renk örneği, istediğiniz rengi kullanabilirsiniz */
+    border: none; /* Kenarlık olmasını istemiyorsanız kenarlığı kaldırabilirsiniz */
+}
+
+/* Bu stil kuralları belirli bir ID'ye sahip butonun ikonunun rengini değiştirir */
+#navbarNav .navbar-toggler-icon {
+    background-color: white; /* Beyaz renk örneği, istediğiniz rengi kullanabilirsiniz */
+}
+
+
+/* table */
+.table-container {
+	text-align: center;
+}
+
+.custom-table {
+	display: inline-block;
+	border-collapse: collapse;
+	margin: 10px auto; 
+}
+
+.custom-table th, .custom-table td {
+	border: 1px black;
+	padding: 10px;
+	text-align: center;}
+
+
+
+	/* .container {
+		display: flex;
+	  }
+   */
+	  .left-side {
+		flex: 1;
+	  }
+  
+	  .right-side {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	  }
+  
+	  .border {
+		width: 50px;
+		height: 50px;
+		border: 2px solid #000;
+	  }
+
+
+	/* .projectdtails{
+		color: #042382;
+		font-family: 'Hanuman';
+		
+	} */
+
+
+	article {
+		--img-scale: 1.001;
+		--title-color: black;
+		--link-icon-translate: -20px;
+		--link-icon-opacity: 0;
+		position: relative;
+		border-radius: 16px;
+		box-shadow: none;
+		background: #fff;
+		transform-origin: center;
+		transition: all 0.4s ease-in-out;
+		overflow: hidden;
+	  }
+	  
+	  article a::after {
+		position: absolute;
+		inset-block: 0;
+		inset-inline: 0;
+		cursor: pointer;
+		content: "";
+	  }
+	  
+	  /* basic article elements styling */
+	  article h2 {
+		margin: 0 0 18px 0;
+		font-family: "Bebas Neue", cursive;
+		font-size: 1.9rem;
+		letter-spacing: 0.06em;
+		color: var(--title-color);
+		transition: color 0.3s ease-out;
+	  }
+	  
+	  figure {
+		margin: 0;
+		padding: 0;
+		aspect-ratio: 16 / 9;
+		overflow: hidden;
+	  }
+	  
+	  article img {
+		max-width: 100%;
+		transform-origin: center;
+		transform: scale(var(--img-scale));
+		transition: transform 0.4s ease-in-out;
+	  }
+	  
+	  .article-body {
+		padding: 24px;
+	  }
+	  
+	  article a {
+		display: inline-flex;
+		align-items: center;
+		text-decoration: none;
+		color: #28666e;
+	  }
+	  
+	  article a:focus {
+		outline: 1px dotted #28666e;
+	  }
+	  
+	  article a .icon {
+		min-width: 24px;
+		width: 24px;
+		height: 24px;
+		margin-left: 5px;
+		transform: translateX(var(--link-icon-translate));
+		opacity: var(--link-icon-opacity);
+		transition: all 0.3s;
+	  }
+	  
+	  /* using the has() relational pseudo selector to update our custom properties */
+	  article:has(:hover, :focus) {
+		--img-scale: 1.1;
+		--title-color: #28666e;
+		--link-icon-translate: 0;
+		--link-icon-opacity: 1;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	  }
+	  
+	  
+	  /************************ 
+	  Generic layout (demo looks)
+	  **************************/
+	  
+	  *,
+	  *::before,
+	  *::after {
+		box-sizing: border-box;
+	  }
+	  
+	  
+	  
+	  .articles {
+		display: grid;
+		max-width: 1200px;
+		margin-inline: auto;
+		padding-inline: 24px;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 24px;
+	  }
+	  
+	  @media screen and (max-width: 960px) {
+		article {
+		  container: card/inline-size;
+		}
+		.article-body p {
+		  display: none;
+		}
+	  }
+	  
+	  @container card (min-width: 380px) {
+		.article-wrapper {
+		  display: grid;
+		  grid-template-columns: 100px 1fr;
+		  gap: 16px;
+		}
+		.article-body {
+		  padding-left: 0;
+		}
+		figure {
+		  width: 100%;
+		  height: 100%;
+		  overflow: hidden;
+		}
+		figure img {
+		  height: 100%;
+		  aspect-ratio: 1;
+		  object-fit: cover;
+		}
+	  }
+	  
+	  .sr-only:not(:focus):not(:active) {
+		clip: rect(0 0 0 0); 
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap; 
+		width: 1px;
+	  }
