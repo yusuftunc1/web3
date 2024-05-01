@@ -1,0 +1,148 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<br><br><br>
+
+
+<div id="fontduyuru" style="text-align: center; ">
+  <h2>BİZ KİMİZ</h2>
+</div>
+
+<div class="container">
+
+  <p id="hakdiv" style="text-align: justify;">Türkiye'nin başkenti olan Ankara, İstanbul'dan sonra Türkiye'nin ikinci
+    büyük şehridir. Şehrin nüfusu
+    yaklaşık 6 milyonun üzerindedir. Ankara, ülkenin en önemli eğitim ve araştırma merkezlerinden biridir. Birçoğu
+    ülkenin en prestijli üniversiteleri arasında yer alan 18 üniversiteye sahiptir. </p>
+  <br>
+  <p id="hakdiv" style="text-align: justify;">Ankara Gençlik ve Spor İl Müdürlüğü (AGSIM)Ankara'daki yerel bir kamu
+    otoritesidir. Faaliyetlerini;
+    Gençlik Hizmetleri Müdürlüğü, Spor Hizmetleri Müdürlüğü, Kredi ve Yurt Hizmetleri Müdürlüğü olmak üzere üç ana
+    başlık altında yürütmektedir. Kurumun spor uzmanı, antrenörleri, sözleşmeli eğitim yönetim sistemi (EYS)
+    antrenörleri dahil olmak üzere çok sayıda personeli bulunmaktadır. </p>
+  <br>
+  <p id="hakdiv" style="text-align: justify;">Spor Hizmetleri Müdürlüğü: Kuruma bağlı 25 ilçede 100’ün üzerinde spor
+    tesisi bulunmaktadır. Bu
+    tesislerde; atıcılık, atletizm, badminton, basketbol, tekerlekli sandalye tenisi, bisiklet, bocce, boks, buz
+    hokeyi,
+    buz pateni, jimnastik, curling, dart, eskrim, fitness, futbol, kale topu, futbol, güreş, halter, hentbol, hokey,
+    işitme engelliler voleybol, judo, karate, kayak, kickboks, kürek, modern pentatlon, masa tenisi, muay-thai,
+    okçuluk,
+    taekwondo, tenis, voleybol, wushu, beyzbol, softbol, ragbi, yüzme vb. branşlar yer almaktadır. Profesyonel ve
+    amatör
+    sporcular dahil olmak üzere her yaş grubuna (çocuk, genç, yetişkin, engelli) bu tesislerde hizmet verilmektedir.
+    Ayrıca kurum, profesyonel sporcuların yetiştirildiği özel bir spor merkezi olan Eryaman Türkiye Olimpik Hazırlık
+    Merkezi’ni (TOHM) de bünyesinde bulundurmaktadır. Ankara'da 293 özel spor salonu ve 1368 özel spor kulübü AGSIM'ne
+    bağlı olarak faaliyet göstermektedir. Ankara'da faaliyet gösteren özel spor kulüplerinin denetimleri ve faaliyet
+    izinleri AGSIM tarafından yapılmaktadır. </p>
+  <br>
+  <p id="hakdiv" style="text-align: justify;">Gençlik Hizmetleri Müdürlüğü: Kuruma bağlı 25 ilçede gençlik hizmetleri
+    merkezleri ve genç ofisleri
+    bulunmaktadır. Bu gençlik merkezleri ve genç ofisler, gençlik hizmetleri faaliyetleri, hareketlilik projeleri,
+    gençlik kampları, piknik organizasyonları, çeşitli ziyaretler (huzurevi, pansiyon) ve kültür-sanat yarışmaları vb.
+    gibi faaliyetleri organize etmektedir. Ayrıca değerler eğitimi, dil eğitimi, inovasyon, sosyal bilimler, kişisel
+    gelişim, güzel sanatlar, sağlıklı yaşam ve spor olmak üzere farklı atölye dallarında gençlere hizmet vermektedir.
+    Kredi ve Yurt Hizmetleri Müdürlüğü: Kuruma bağlı Ankara ilçelerinde KYK yurdu ve inşaatı devam etmekte olan
+    yurtları
+    bulunmaktadır. Bu yurtlar, lisans ve yüksek lisans eğitimi için Ankara'ya gelen öğrencilerin barınma ihtiyacını
+    karşılamaktadır.
+  </p>
+  <br>
+  
+  <br>
+  <br>
+
+
+  <div class="container">
+    <div class="row">
+      {% if about_page %}
+        {% for page_info in about_page %}
+          
+          {% if page_info.image1 %}
+          <div class="col-md-6 col-lg-4">
+              <div class="card border-0 transform-on-hover">
+                <img src="{{page_info.image1}}" alt="Card Image" class="card-img-top">
+              </div>
+          </div>
+          {%endif%}
+          {% if page_info.image2 %}
+          <div class="col-md-6 col-lg-4">
+              <div class="card border-0 transform-on-hover">
+                <img src="{{page_info.image2}}" alt="Card Image" class="card-img-top">
+              </div>
+          </div>
+          {%endif%}
+          {% if page_info.image3 %}
+          <div class="col-md-6 col-lg-4">
+              <div class="card border-0 transform-on-hover">
+                <img src="{{page_info.image3}}" alt="Card Image" class="card-img-top">
+              </div>
+          </div>
+          {%endif%}
+
+        {% endfor%}
+      {%endif%} 
+    </div>
+</div>
+
+
+<hr><br><br><br><br>
+
+
+<!-- ÜMİTKÖY -->
+  <div id="fontduyuru" style="text-align: center;">
+    <h2>ÜMİTKÖY SPOR KOMPLEKSİ</h2>
+  </div>
+  <br>
+  <div>
+    <p id="hakdiv" style="text-align: justify;">Türkiye’nin sayılı tesislerinden olan Ümitköy Spor Kompleksi, AGSIM
+      çatısı altında faaliyetlerini
+      yürütmektedir. Ümitköy Spor Kompleksi 19 bin metrekarelik bir alan üzerine inşa edilmiştir. Bünyesinde yüzme,
+      wushu,
+      karate, jimnastik, boks, eskrim, taekwondo, buz hokeyi, curling, artistik buz pateni, atıcılık, modern pentatlon,
+      fitness, pilates, yoga, dans, squash gibi spor branşlarını barındırmaktadır. Kompleks, profesyonel ve amatör
+      sporculara 7 gün 24 saat hizmet vermektedir. Tesis yıl boyunca ulusal ve uluslararası yarışlara ev sahipliği
+      yapmaktadır. </p>
+    <br>
+  </div>
+</div>
+
+<!-- FOTOĞRAFLAR -->
+<div class="container">
+  <div class="row">
+    {% if about_page %}
+      {% for page_info in about_page %}
+
+      {% if page_info.image4 %}
+      <div class="col-md-6 col-lg-4">
+          <div class="card border-0 transform-on-hover">
+            <img src="{{page_info.image4}}" alt="Card Image" class="card-img-top">
+          </div>
+      </div>
+      {%endif%}
+
+      {% if page_info.image5 %}
+      <div class="col-md-6 col-lg-4">
+          <div class="card border-0 transform-on-hover">
+            <img src="{{page_info.image5}}" alt="Card Image" class="card-img-top">
+          </div>
+      </div>
+      {%endif%}
+
+      {% if page_info.image6 %}
+      <div class="col-md-6 col-lg-4">
+          <div class="card border-0 transform-on-hover">
+            <img src="{{page_info.image6}}" alt="Card Image" class="card-img-top">
+          </div>
+      </div>
+      {%endif%}
+
+      {%endfor%}
+    {%endif%}
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+{% endblock %}

@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+
+  <!-- <div style="padding-left: 1040px;">
+    <div id="buton konum" class="btn-group">
+      <button style="background-color:#2a046c" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        LANG
+      </button>
+<BR>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">English</a>
+      </div>
+    </div>
+  </div> -->
+  <br><br>
+
+  <!-- <div class="btn-group">
+    <button style="background-color:blueviolet" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      LANG
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <button class="dropdown-item" type="button">EN</button>
+      
+    </div>
+  </div> -->
+
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://cdn.dsmcdn.com/mrktng/seo/aralik4/wellness-nedir-4.jpg">
+      </div>
+      <div class="item">
+        <img src="https://wallpapercave.com/wp/wp2046117.jpg">
+      </div>
+      <div class="item">
+        <img src="https://unsplash.it/1400/600?image=315">
+      </div>
+      <div class="item">
+        <img src="https://unsplash.it/1400/600?image=622">
+      </div>
+      <div class="item">
+        <img src="https://unsplash.it/1400/600?image=401">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+
+<br><br>
+
+<div id="fontduyuru" style="text-align: center; ">
+  <h2>DUYURULAR</h2>
+</div>
+
+<br><br>
+
+
+<div class="container m-t-md">
+  <!-- First row -->
+
+  
+  <div class="row">
+    {%if announcments %}
+      {%for announcment in announcments %}
+      <div class="col-xs-4 col-md-3">
+          <!-- Card -->
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="{{announcment.image}}" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>{{announcment.title}}</h2>
+                <p>
+                  {{announcment.message}}
+                </p>
+                <a href="{% url 'duyuru' announcment.announcments_url %}" class="read-more">
+                  Daha fazla <span class="sr-only"></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+      </div>
+      {%endfor%}
+    {%endif%}
+      
+
+  </div>
+</div>
+
+{% endblock %}

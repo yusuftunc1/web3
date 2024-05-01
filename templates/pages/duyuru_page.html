@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    {% if announcments %}
+    {% for announcment in announcments %}
+    <div class="row mx-auto">
+        <h1>
+            {{announcment.title}}
+        </h1>
+    </div>
+    <p>
+    {{announcment.content | safe}}
+    </p>
+    
+    {%endfor%}
+    {%endif%}
+</div>
+
+
+
+
+{% endblock %}

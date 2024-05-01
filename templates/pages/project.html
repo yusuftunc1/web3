@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+{% if project_page_content %}
+<br><br>
+
+  <div class="container py-3" >
+    
+
+    {% for project in project_page_content %}
+    <div class="col-md-6">
+      <div class="card">
+        <div class="row">
+          <div class="col-sm-7">
+            <div >
+              <h4 id="fontduyuru" >{{project.title}}</h4><br>
+              <p> {{project.aciklama |slice:":90" |safe }} ... </p> <br>
+              <a href="{% url 'proje' project.project_url %}" style="color: aliceblue;" class="btn btn-primary btn-sm">Daha Fazla</a>
+            </div>
+          </div>
+    
+          <div class="col-sm-5">
+            <img class="d-block w-100" src="{{project.image1}}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {% endfor %}
+  </div>
+  <br><br><br><br><br><br><br><br>
+{% endif %} 
+{% endblock %}
+
